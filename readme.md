@@ -12,7 +12,7 @@
 8. /var - variable dtata, mostly log files.
 
 ** Directory Structure **
-(/Home/Pictures/linux-directories.png)
+(/linux-directories.png)
 
 ### Linux essential commands
 
@@ -24,8 +24,8 @@
 
 ```
 cd Downloads
-cd ~ // home directory
+cd ~     // home directory
 ls -p
 ls -l
 
-``
+```
