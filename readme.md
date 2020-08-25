@@ -14,9 +14,10 @@
 10. /proc - provides info about running processes.
 
 **Directory Structure**
+
 ![LInux Directories](/linux-directories.png?raw=true "Title")
 
-## Shell - ### a program that accepts your commands and executes the commands.
+## Shell - A program that accepts your commands and executes the commands.
 
 * Shell is the default UI of alinux sysytem.
 * Terminal gives acces to the shell.
@@ -78,4 +79,9 @@ ls -l
     3. ```
         cd -        Change to the previous directory.
         ```
-    4. / Directory separator (forward slash)
+    4. / Directory separator (forward slash).
+    5. makdir [-p]  Create directory [p] is optional.
+        ```
+        mkdir new_dir
+        ```
+    6. rmdir - Remove a directory
