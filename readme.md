@@ -91,6 +91,7 @@ ls -latr // Long listing includes all files reverse sorted out by time.
 ls -R   // Lists files recursively
 ls - d  // List directory name, not contents.
 ls --color  // colorize output
+```
 
 ### Tree command
 
