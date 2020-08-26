@@ -84,7 +84,7 @@ ls -F   // get file types
 
 ### Listing files by Time and in Reverse
 
-* ```
+```
 ls -t   // List files by time
 ls -r   // Reverse order
 ls -latr // Long listing includes all files reverse sorted out by time.
@@ -95,7 +95,7 @@ ls --color  // colorize output
 
 ### Tree command
 
-* Similar to ls -R, but creates visual output.
+**Similar to ls -R, but creates visual output.**
 
 ```
 tree -d         // List directories only
