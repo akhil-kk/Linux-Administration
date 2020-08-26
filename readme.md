@@ -57,6 +57,58 @@ ls -l
 
 ```
 
+**Decoding ls -l**
+
+```
+-rw-rw-r-- 1 akhil users 10400 Sep 27 08:52 sales.data
+```
+* Permissions       -rw-rw-r--
+* Number of links   1
+* Owner name        akhil
+* Group name        users
+* Number of bytes in the files 10400
+* Last modification time Sep 27 08:52
+* File name         sales.data
+
+* files or directories with a peroid or dot are considered as hidden files.
+* Hidden files will not be displayed by ls.
+* Use 
+```
+ls -a
+ls -F   // get file types
+        //  '/' means a direcctory
+        // '@' means Link
+        // '*' means Executable 
+
+```
+
+### Listing files by Time and in Reverse
+
+* ```
+ls -t   // List files by time
+ls -r   // Reverse order
+ls -latr // Long listing includes all files reverse sorted out by time.
+ls -R   // Lists files recursively
+ls - d  // List directory name, not contents.
+ls --color  // colorize output
+
+### Tree command
+
+* Similar to ls -R, but creates visual output.
+
+```
+tree -d         // List directories only
+tree -c         // Colorize output
+```
+
+**Working with space in names**
+
+* Just say no to spaces!
+* ALternatives are
+    * Hyphens(-)
+    * Undercores(_)
+    * CamelCase
+
 ## Environment Variables.
  
  * Storage location that has a name and a value.
@@ -84,4 +136,5 @@ ls -l
         ```
         mkdir new_dir
         ```
-    6. rmdir - Remove a directory
+    6. rmdir - Remove a directory.( Only removes a directory that is empty)
+    7. rm -rf directory - Recursively removes directory.
