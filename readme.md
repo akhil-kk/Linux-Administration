@@ -44,7 +44,7 @@
 8. man - displays the online manual , type "q" to quit man
 9. exit - exits the shell
 10. clear - clears the screen.
-11. Which - Locate command.12.
+11. Which - Locate command.
 12. tac - displays a file's content in reverse order.
 
 eg: 
@@ -62,13 +62,13 @@ ls -l
 ```
 -rw-rw-r-- 1 akhil users 10400 Sep 27 08:52 sales.data
 ```
-* Permissions       -rw-rw-r--
-* Number of links   1
-* Owner name        akhil
-* Group name        users
-* Number of bytes in the files 10400
-* Last modification time Sep 27 08:52
-* File name         sales.data
+* Permissions                   -rw-rw-r--
+* Number of links               1
+* Owner name                    akhil
+* Group name                    users
+* Number of bytes in the files  10400
+* Last modification time        Sep 27 08:52
+* File name                     sales.data
 
 * files or directories with a peroid or dot are considered as hidden files.
 * Hidden files will not be displayed by ls.
@@ -281,18 +281,18 @@ Line        :
 
 ## Graphical editors
 
-1. emacs        Emacs has a graphocal mode too.
-2. gedit        The default text editor for Gnome.
-3. gvim         The graphical version of vim.
-4. kedit        The default text editor for the KDE.
+1. emacs        Emacs has a graphocal mode too
+2. gedit        The default text editor for Gnome
+3. gvim         The graphical version of vim
+4. kedit        The default text editor for the KDE
 
 ## File Operations
 
 **Delete File**
 ```
-rm file         Remove file.
-rm  -r dir      Remove the diectory and its contents recursively. 
-rm -f file      Force removal and never.
+rm file         Remove file
+rm -r dir      Remove the diectory and its contents recursively
+rm -f file      Force removal and never
 ```
 
 **Copying Files**
@@ -301,45 +301,45 @@ rm -f file      Force removal and never.
 cp source_file destinaion_file      //Copy source file to destination file.
 cp src_flie1 [src_fileN...] dest_dir     //Copy source_files to destination_direction.
 cpm -i          // Run in interactive mode
-cp -r source directory destination         // Copy src_directory recursively to destination.
+cp -r source directory destination         // Copy src_directory recursively to destination
 ```
 
 **Moving and Renaming Files**
 
 ```
-mv  source_destination.
-mv  -i source_destination.
+mv  source_destination
+mv  -i source_destination
 ```
 **sort**
 ```
-sort file       //Sort text in file.
-sort -r         //Sort in reverse order.
-sort -u         //Sort unique (remove duplicate line).
-sort -k F       //Sort by key. F is the field number.
+sort file       //Sort text in file
+sort -r         //Sort in reverse order
+sort -u         //Sort unique (remove duplicate line)
+sort -k F       //Sort by key. F is the field number
 ```
 
 **Creating collectoin of files**
 
 ```
-tar c|x|t f tarfile         // create a list of contents.
+tar c|x|t f tarfile         // create a list of contents
 ```
 
 **tar options**
 
 ```
-c           Create a tar archive.
-x           Extract files from the archive.
+c           Create a tar archive
+x           Extract files from the archive
 t           Display the tabke of contents list
-v           Be verbose.
-z           Use compression.
-f file      Use this file.
+v           Be verbose
+z           Use compression
+f file      Use this file
 ```
 
 **Disk Usage**
 ```
-du          Estimate file usage.
-du -k       Displays size in Kilobytes.
-du -h       Display sizes in human readable format.
+du          Estimate file usage
+du -k       Displays size in Kilobytes
+du -h       Display sizes in human readable format
 ```
 
 
