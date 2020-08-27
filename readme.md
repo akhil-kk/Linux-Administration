@@ -156,9 +156,11 @@ Symbol      Type
 'r'         Read
 'w'         Write
 'x'         Execute
+```
 
 **Permission Categories**
 
+```
 Symbol      Category
 'u'         User
 'g'         Group
@@ -192,6 +194,38 @@ chmod u=rwx, g=rx sales.data
 * The 'chgrp' command chnages the group.
 
 ## Finding files and Directories
+
+**Find Command**
+```
+find [path] [expression]    //recursively find files in path that match expression.
+-excec command {} \;        //run command against all the files that are found
+
+find ./temp -iname *t       // -i iggnore case, * matches all with t, find looks for files or directories in temp.
+```
+
+**Locate Command**
+
+* fastre than find command
+* quries an index
+
+## Displaying Contents of Files
+
+```
+cat file        Display the contents of file
+more file       Browse through a text file
+less file       More features than more
+head file       Output the begining portion of the file, displaye only 10 lines. 'tail -15 file' will get the last 15 lines
+tail file       Output the ending portion of the file,displaye only 10 lines
+```
+
+### Nano Editor
+
+* Nano is a simple editor.
+* to open file 'nano filename'
+* cntrl + o to save
+* q to exit
+
+
 
 
 
