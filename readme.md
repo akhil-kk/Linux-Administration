@@ -190,7 +190,7 @@ chmod u=rwx, g=rx sales.data
 
 ### Changing Groups
 
-* New files belong t your primary group.
+* New files belong to your primary group.
 * The 'chgrp' command chnages the group.
 
 ## Finding files and Directories
@@ -200,7 +200,7 @@ chmod u=rwx, g=rx sales.data
 find [path] [expression]    //recursively find files in path that match expression.
 -excec command {} \;        //run command against all the files that are found
 
-find ./temp -iname *t       // -i iggnore case, * matches all with t, find looks for files or directories in temp.
+find ./temp -iname *t       // '-i' ignore case, '*' matches all with t, 'find' looks for files or directories in temp.
 ```
 
 **Locate Command**
@@ -224,6 +224,55 @@ tail file       Output the ending portion of the file,displaye only 10 lines
 * to open file 'nano filename'
 * cntrl + o to save
 * q to exit
+
+### The Vi Editor
+
+```
+vi [file]           Edit file
+vim [file]          same as vi, but more features
+view [file]         Starts vim in read-only mode
+```
+####  Vi command Mode and Navigation
+
+```
+k           Up one line
+j           Down one line
+h           Left one character
+l           Right one character
+w           Right one word
+b           left one word
+^           Go to the begining of the line
+$           Go to the end of the line.
+x           Delete a character
+dw          Delete a word
+dd          Delete a line
+yy          copy the current line
+p           paste the text
+u           undo
+cntrl-R     redo
+```
+![vim](/vinav.png?raw=true "Title")
+
+**Insert Mode**
+
+```
+i           Insert the cursor position.
+I           Insert at the beginning if the line.
+a           Append after the cursor position.
+A           Append at the end of the line.
+```
+```
+:set nu     Turn on line numbering.
+:set nonu   Turn off line numbering.
+```
+
+**Modes**
+```
+Mode        Key
+Command     Esc
+Insert      i | a A
+Line        :
+```
 
 
 
