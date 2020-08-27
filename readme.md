@@ -147,7 +147,7 @@ tree -c         // Colorize output
 ls -l
 -rw-rw-r-- 1 akhil users 10400 Sep 27 08:52 sales.data
 ```
-
+```
 Symbol      Type
 '-'         Regular File
 'd'         Directory
@@ -164,6 +164,7 @@ Symbol      Category
 'g'         Group
 'o'         Other
 'a'         All
+```
 
 'groups' command displays a users groups.
 
@@ -171,10 +172,12 @@ Symbol      Category
 
 ### Changing Permissions
 
+```
 chmod       - Change mode command
 ugoa        - User category user, group, other, all
 +-=         - Add, substarct, or set permissions.
 rwx         - Read, write, Execute.
+```
 
 eg
 
