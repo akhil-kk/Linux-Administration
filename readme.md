@@ -147,6 +147,7 @@ tree -c         // Colorize output
 ls -l
 -rw-rw-r-- 1 akhil users 10400 Sep 27 08:52 sales.data
 ```
+
 ```
 Symbol      Type
 '-'         Regular File
@@ -177,8 +178,8 @@ Symbol      Category
 ```
 chmod       - Change mode command
 ugoa        - User category user, group, other, all
-+-=         - Add, substarct, or set permissions.
-rwx         - Read, write, Execute.
++-=         - Add, substarct, or set permissions
+rwx         - Read, write, Execute
 ```
 
 eg
@@ -197,16 +198,16 @@ chmod u=rwx, g=rx sales.data
 
 **Find Command**
 ```
-find [path] [expression]    //recursively find files in path that match expression.
+find [path] [expression]    //recursively find files in path that match expression
 -excec command {} \;        //run command against all the files that are found
 
-find ./temp -iname *t       // '-i' ignore case, '*' matches all with t, 'find' looks for files or directories in temp.
+find ./temp -iname *t       // '-i' ignore case, '*' matches all with t, 'find' looks for files or directories in temp
 ```
 
 **Locate Command**
 
-* fastre than find command
-* quries an index
+* fastre than find command.
+* quries an index.
 
 ## Displaying Contents of Files
 
@@ -250,20 +251,24 @@ yy          copy the current line
 p           paste the text
 u           undo
 cntrl-R     redo
+:w          Write changes to the file
+:q          quit
+
 ```
+
 ![vim](/vinav.png?raw=true "Title")
 
 **Insert Mode**
 
 ```
-i           Insert the cursor position.
-I           Insert at the beginning if the line.
-a           Append after the cursor position.
-A           Append at the end of the line.
+i           Insert the cursor position
+I           Insert at the beginning if the line
+a           Append after the cursor position
+A           Append at the end of the line
 ```
 ```
-:set nu     Turn on line numbering.
-:set nonu   Turn off line numbering.
+:set nu     Turn on line numbering
+:set nonu   Turn off line numbering
 ```
 
 **Modes**
@@ -273,6 +278,81 @@ Command     Esc
 Insert      i | a A
 Line        :
 ```
+
+## Graphical editors
+
+1. emacs        Emacs has a graphocal mode too.
+2. gedit        The default text editor for Gnome.
+3. gvim         The graphical version of vim.
+4. kedit        The default text editor for the KDE.
+
+## File Operations
+
+**Delete File**
+```
+rm file         Remove file.
+rm  -r dir      Remove the diectory and its contents recursively. 
+rm -f file      Force removal and never.
+```
+
+**Copying Files**
+
+```
+cp source_file destinaion_file      //Copy source file to destination file.
+cp src_flie1 [src_fileN...] dest_dir     //Copy source_files to destination_direction.
+cpm -i          // Run in interactive mode
+cp -r source directory destination         // Copy src_directory recursively to destination.
+```
+
+**Moving and Renaming Files**
+
+```
+mv  source_destination.
+mv  -i source_destination.
+```
+**sort**
+```
+sort file       //Sort text in file.
+sort -r         //Sort in reverse order.
+sort -u         //Sort unique (remove duplicate line).
+sort -k F       //Sort by key. F is the field number.
+```
+
+**Creating collectoin of files**
+
+```
+tar c|x|t f tarfile         // create a list of contents.
+```
+
+**tar options**
+
+```
+c           Create a tar archive.
+x           Extract files from the archive.
+t           Display the tabke of contents list
+v           Be verbose.
+z           Use compression.
+f file      Use this file.
+```
+
+**Disk Usage**
+```
+du          Estimate file usage.
+du -k       Displays size in Kilobytes.
+du -h       Display sizes in human readable format.
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
