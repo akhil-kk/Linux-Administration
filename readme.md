@@ -15,7 +15,7 @@
 
 **Directory Structure**
 
-![LInux Directories](/linux-directories.png?raw=true "Title")
+![Linux Directories](/linux-directories.png?raw=true "Title")
 
 ## Shell - A program that accepts your commands and executes the commands.
 
@@ -130,7 +130,7 @@ tree -c         // Colorize output
     1. . This directory
     2. .. The parent directory
     3. ```
-        cd -        Change to the previous directory.
+        cd -      //Change to the previous directory.
         ```
     4. / Directory separator (forward slash).
     5. makdir [-p]  Create directory [p] is optional.
@@ -139,3 +139,66 @@ tree -c         // Colorize output
         ```
     6. rmdir - Remove a directory.( Only removes a directory that is empty)
     7. rm -rf directory - Recursively removes directory.
+
+## File and Directory Permissions
+
+**Permisions**
+```
+ls -l
+-rw-rw-r-- 1 akhil users 10400 Sep 27 08:52 sales.data
+```
+
+Symbol      Type
+'-'         Regular File
+'d'         Directory
+'|'         Symbolic Link
+
+'r'         Read
+'w'         Write
+'x'         Execute
+
+**Permission Categories**
+
+Symbol      Category
+'u'         User
+'g'         Group
+'o'         Other
+'a'         All
+
+'groups' command displays a users groups.
+
+![Linux Directories](/permissions.png?raw=true "Title")
+
+### Changing Permissions
+
+chmod       - Change mode command
+ugoa        - User category user, group, other, all
++-=         - Add, substarct, or set permissions.
+rwx         - Read, write, Execute.
+
+eg
+
+```
+chmod a=r sales.data
+chmod u=rwx, g=rx sales.data
+```
+
+### Changing Groups
+
+* New files belong t your primary group.
+* The 'chgrp' command chnages the group.
+
+## Finding files and Directories
+
+
+
+
+
+
+    
+
+
+
+
+
+
