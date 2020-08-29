@@ -15,7 +15,7 @@
 
 **Directory Structure**
 
-![Linux Directories](/linux-directories.png?raw=true "Title")
+![Linux Directories](/notes/img/linux-directories.png?raw=true "Title")
 
 ## Shell - A program that accepts your commands and executes the commands.
 
@@ -171,7 +171,7 @@ Symbol      Category
 
 'groups' command displays a users groups.
 
-![Linux Directories](/permissions.png?raw=true "Title")
+![Linux Directories](/notes/img/permissions.png?raw=true "Title")
 
 ### Changing Permissions
 
@@ -256,7 +256,7 @@ cntrl-R     redo
 
 ```
 
-![vim](/vinav.png?raw=true "Title")
+![vim](/notes/img/vinav.png?raw=true "Title")
 
 **Insert Mode**
 
@@ -341,30 +341,3 @@ du          Estimate file usage
 du -k       Displays size in Kilobytes
 du -h       Display sizes in human readable format
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-

@@ -168,7 +168,7 @@ kill 123    kill a process by process id
 ```
 ## Repeated jobs with Cron
 
-![crone](/crone.png?raw=true "Title")
+![crone](/notes/img/crone.png?raw=true "Title")
 
 ```
 crontab file        install new crontab from file
