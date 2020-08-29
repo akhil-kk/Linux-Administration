@@ -99,10 +99,62 @@ cat file | grep pattern
 ```
 cut [file]          //Cut out selected portions of file. If file is omitted, use standard input.
 ```
-**Cut options**I
+**Cut options**
 
 * -d delimeter        Use delimeter as filed seperator.
 * -f N                Display the Nth field
+
+## Copy files over network
+
+* To copy files from llocal work station to a linux server or between linux servers we need to use 'SCP' or 'SFTP'.
+
+SCP - Secure copy
+SFTP - SSH file transfer protocol
+
+To use scp or sftp we need a client like 'PuTTY secure file transfer client'.
+
+Graphical SCP/SFTP clients
+
+* cyberduck
+* fileZilla
+* WinSCP
+
+eg:
+```
+scp source destination copy source to destination
+eg: scp abc.txt linuxsvr:/tmp/
+
+sftp host           start a secure file transfer session with host. (when connected to a remote, use lls oand lpwd for lisiting files)
+
+ftp host            start a file transfer session with host.
+```
+
+## Environment variables
+
+*  Environment variable is a storage loation that has a name and a value. They often affect the way programs behave.To view all environment variables 
+
+```
+printenv
+```
+
+* linux environment variables are case sensitive.
+
+* to create env variables 
+```
+export VAR="value"
+```
+* To remove env variables
+```
+unset VAR
+```
+
+
+
+
+ 
+
+
+
 
 
 
