@@ -148,6 +148,30 @@ export VAR="value"
 unset VAR
 ```
 
+## Processes and Job control
+```
+ps              display process status
+ps -e           display all proesses
+ps -ef          display all processes, full
+ps -eH          display a process tree
+ps -e --forest  display a process tree
+ps -u username  display user's processes.   
+ ```
+
+**Background and Foreground process**
+
+```
+command &   Start comand in background
+ctrl-c      Kill the foreground process
+ctrl-z      Susupend the foreground process
+kill 123    kill a process by process id
+```
+
+
+
+
+
+
 
 
 
