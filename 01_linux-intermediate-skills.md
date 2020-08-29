@@ -215,29 +215,4 @@ apt-get remove package          Remove package , configuration changes stay
 apt-get purge package           Remove package, deleting configuration
 dpkg -l                         List installed packages
 dpkg -i                         install package
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
+```
