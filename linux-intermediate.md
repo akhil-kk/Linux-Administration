@@ -166,6 +166,60 @@ ctrl-c      Kill the foreground process
 ctrl-z      Susupend the foreground process
 kill 123    kill a process by process id
 ```
+## Repeated jobs with Cron
+
+![crone](/crone.png?raw=true "Title")
+
+```
+crontab file        install new crontab from file
+crontab -l          list your crone jobs
+crontab -e          Edit your crone jobs
+crontab -r          Remove all of your cron jobs
+```
+## Switching users 
+```
+whoami                  returns your current account name
+sudo -u root command    same as above
+sudo -u user command    run as user
+```
+
+## Shell History
+
+```
+history     Displaye shell history
+HISTSIZE    Controls the number of commands to retain in history
+export HISTSIZE = 1000
+```
+
+## installing softwares
+
+**for RPM packages**
+```
+yum search string           Search for string
+yum info [package]          Display info
+yum install [-y] package    install package
+yum remove package          Remove package
+rpm -qa                     List all installed packages
+rpm -ivh package.rpm        install package
+rpm -e package              remove
+```
+
+**DEB ditributions**
+
+APT - advanced Packaging tool
+```
+apt-cache search string         Search string
+apt-cache show package          display info
+apt-get install [-y] package    Install package
+apt-get remove package          Remove package , configuration changes stay
+apt-get purge package           Remove package, deleting configuration
+dpkg -l                         List installed packages
+dpkg -i                         install package
+
+
+
+
+
 
 
 
