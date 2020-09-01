@@ -82,7 +82,7 @@ ip addr
 ifconfig
 ```
 
-## DNS
+### DNS
 
 Translate human readable name to  IP addresses.
 
@@ -95,8 +95,21 @@ uname -n
 hostnam -f
 ```
 
-## Netowrk ports
+### Netowrk ports
 
 ![dns](/notes/img/ports.png?raw=true "Title")
+
+## Troubleshooting
+
+ **ping**
+
+ ```
+ ping HOST
+ ping -c count host // sent specific number of ackets to host
+ tracepath-n google.com
+ ```
+![dns](/notes/img/stat.png?raw=true "Title")
+
+
 
 
