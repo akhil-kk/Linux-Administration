@@ -74,5 +74,29 @@ for a device on the network to communicate properly it needs 3 pieces of informa
 
 ![reserved](/notes/img/reserved.png?raw=true "Title")
 
+**Display IP**
+
+```
+ip a
+ip addr
+ifconfig
+```
+
+## DNS
+
+Translate human readable name to  IP addresses.
+
+![dns](/notes/img/dns.png?raw=true "Title")
+
+displaying host name
+```
+hostname
+uname -n
+hostnam -f
+```
+
+## Netowrk ports
+
+![dns](/notes/img/ports.png?raw=true "Title")
 
 
